@@ -1,0 +1,23 @@
+Vue router有以下静态API和方法：
+
+VueRouter.createRouter(option)：创建一个新的 Vue Router 实例。
+
+VueRouter：VueRouter是一个类，可以通过实例化来创建一个新的路由器。
+
+router.push(location, onComplete?, onAbort?)：将地址添加到地址栏中，并导航到新的地址。
+
+router.replace(location, onComplete?, onAbort?)：不会增加新的历史记录，而是替换当前的历史记录。
+
+router.go(n)：在浏览器历史记录中向前或向后移动n个位置。
+
+router.back()：在浏览器历史记录中向后移动一个位置。
+
+router.forward()：在浏览器历史记录中向前移动一个位置。
+
+router.beforeEach (to, from, next)：路由切换前执行的函数。
+
+router.beforeResolve (to, from, next)：在路由切换前执行，确保所有异步路由组件都解析完。
+
+router.afterEach (to, from)：路由切换后执行的函数。
+
+router.onError(error)：路由出错时执行的函数。
